@@ -1,0 +1,83 @@
+:root {
+    --main-color: #24353F;
+    --sec-color: #17A2B8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web",sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+
+#signInForm{
+    background-color: var(--main-color);
+    box-shadow: 0 0 20px 20px ;
+    width: 80%; 
+}
+
+#signInForm h1 {
+    font-size: 20px;
+    color: var(--sec-color);
+}
+
+#signInForm .form-control {
+    background-color: var(--main-color); 
+    color: white;
+}
+
+#signInForm .form-control:focus {
+    box-shadow: none !important;
+}
+
+#signInForm .form-control::placeholder {
+    color: rgb(199, 198, 198);
+    font-size: 15px;
+}
+
+#signInForm button {
+    background-color: var(--main-color); 
+    color: var(--sec-color);
+    border: 2px solid var(--sec-color);
+    transition: .5s all;
+}
+
+#signInForm button:hover {
+    background-color: var(--sec-color);
+    color: white;
+}
+
+#signInForm a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width:992px){
+    #signInForm{ 
+        width: 60%;
+    }
+    #signInForm h1{
+        font-size: 28px;
+    }
+    #signInForm .form-control::placeholder {
+        font-size: 17px;
+    }
+  
+}
+
+@media screen and (min-width:1400px) {
+      #signInForm h1{
+        font-size: 40px;
+    }
+        #signInForm p {
+        font-size: 18px;
+    }
+        #signInForm button {
+            font-size: 18px;
+        }
+}
